@@ -1,3 +1,4 @@
+package src;
 import src.services.MagicSquareService;
 import src.services.MatrixService;
 import src.validation.MatrixValidator;

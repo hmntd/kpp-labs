@@ -1,3 +1,4 @@
+package src;
 import java.util.Scanner;
 
 import src.models.Game2048State;

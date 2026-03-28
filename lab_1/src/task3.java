@@ -1,3 +1,4 @@
+package src;
 import src.services.MatrixService;
 
 public class task3 {
