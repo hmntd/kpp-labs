@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lab10</string>
+    <string name="menu_title">Пошук</string>
+    <string name="label_brand">Марка авто (Brand)</string>
+    <string name="label_model">Модель авто (Model)</string>
+    <string name="label_age">Рік випуску (Від - До):</string>
+    <string name="label_price">Вартість (Від - До):</string>
+    <string name="matches_count">Matches: 0</string>
+    <string name="reset">Скинути</string>
+    <string name="image_description">Car Image</string>
+    <string name="start">Від</string>
+    <string name="finish">До</string>
+</resources>
