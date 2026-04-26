@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_candidate_survey"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="@string/hint_name"
+                android:inputType="textPersonName"
+                android:autofillHints="name" />
+
+            <EditText
+                android:id="@+id/etAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="@string/hint_age"
+                android:inputType="number"
+                android:autofillHints="age" />
+
+            <TextView
+                android:id="@+id/tvSalaryLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_salary"
+                android:layout_marginTop="16dp"/>
+            <SeekBar
+                android:id="@+id/sbSalary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="45" /> <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/additional"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+            <CheckBox
+                android:id="@+id/cbExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/work_exp" />
+            <CheckBox
+                android:id="@+id/cbSkills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/skills" />
+            <CheckBox
+                android:id="@+id/cbTravel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/travel_ready" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_first"
+                android:layout_marginTop="16dp"/>
+            <RadioGroup android:id="@+id/rgQ1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/rbQ1_correct" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/q1_answer_paradigm" />
+                <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/q1_answer_language" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_second"
+                android:layout_marginTop="8dp"/>
+            <RadioGroup android:id="@+id/rgQ2" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/q2_answer_windows" />
+                <RadioButton android:id="@+id/rbQ2_correct" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/q2_answer_linux" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_third"
+                android:layout_marginTop="8dp"/>
+            <RadioGroup android:id="@+id/rgQ3" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/rbQ3_correct" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/q3_answer_appWindow" />
+                <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/q3_answer_db" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_fourth"
+                android:layout_marginTop="8dp"/>
+            <RadioGroup android:id="@+id/rgQ4" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/q4_answer_json" />
+                <RadioButton android:id="@+id/rbQ4_correct" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/q4_answer_xml" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_fifth"
+                android:layout_marginTop="8dp"/>
+            <RadioGroup android:id="@+id/rgQ5" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/rbQ5_correct" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/q5_answer_kotlin" />
+                <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/q5_answer_swift" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:text="@string/pass_test"
+                android:enabled="false"/> <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

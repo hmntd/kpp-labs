@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Lab9</string>
+    <string name="title_candidate_survey">Анкета кандидата</string>
+    <string name="hint_name">ПІБ</string>
+    <string name="hint_age">Вік (21\-40)</string>
+    <string name="hint_salary">Бажана ЗП: 500 USD</string>
+    <string name="additional">Додатково:</string>
+    <string name="work_exp">5. Досвід роботи від 2 років</string>
+    <string name="skills">6. Навички командної розробки та тестування</string>
+    <string name="travel_ready">7. Готовність до відряджень</string>
+
+    <string name="question_first">"Питання 1: Що таке ООП?</string>
+    <string name="q1_answer_paradigm">Парадигма програмування</string>
+    <string name="q1_answer_language">Мова програмування</string>
+
+    <string name="question_second">Питання 2: Яка ОС лежить в основі Android?</string>
+    <string name="q2_answer_windows">Windows</string>
+    <string name="q2_answer_linux">Linux</string>
+
+    <string name="question_third">Питання 3: Що таке Activity в Android?</string>
+    <string name="q3_answer_appWindow">Один екран додатку</string>
+    <string name="q3_answer_db">База даних</string>
+
+    <string name="question_fourth">Питання 4: Який формат файлу конфігурації Android?</string>
+    <string name="q4_answer_json">.json</string>
+    <string name="q4_answer_xml">.xml</string>
+
+    <string name="question_fifth">Питання 5: Яка мова офіційно рекомендована для Android?</string>
+    <string name="q5_answer_kotlin">Kotlin</string>
+    <string name="q5_answer_swift">Swift</string>
+
+    <string name="pass_test">Здати тест</string>
+</resources>
