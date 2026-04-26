@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="0"
+        android:textSize="48sp"
+        android:gravity="end|bottom"
+        android:background="#EEEEEE"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="4">
+
+        <Button android:id="@+id/btn7" text="7" android:layout_width="0dp" android:layout_columnWeight="1" />
+        <Button android:id="@+id/btn8" text="8" android:layout_width="0dp" android:layout_columnWeight="1" />
+        <Button android:id="@+id/btn9" text="9" android:layout_width="0dp" android:layout_columnWeight="1" />
+        <Button android:id="@+id/btnDiv" text="/" android:layout_width="0dp" android:layout_columnWeight="1" />
+
+        <Button android:id="@+id/btn4" text="4" android:layout_width="0dp" android:layout_columnWeight="1" />
+        <Button android:id="@+id/btn5" text="5" android:layout_width="0dp" android:layout_columnWeight="1" />
+        <Button android:id="@+id/btn6" text="6" android:layout_width="0dp" android:layout_columnWeight="1" />
+        <Button android:id="@+id/btnMul" text="*" android:layout_width="0dp" android:layout_columnWeight="1" />
+
+        <Button android:id="@+id/btn1" text="1" android:layout_width="0dp" android:layout_columnWeight="1" />
+        <Button android:id="@+id/btn2" text="2" android:layout_width="0dp" android:layout_columnWeight="1" />
+        <Button android:id="@+id/btn3" text="3" android:layout_width="0dp" android:layout_columnWeight="1" />
+        <Button android:id="@+id/btnSub" text="-" android:layout_width="0dp" android:layout_columnWeight="1" />
+
+        <Button android:id="@+id/btnClear" text="C" android:layout_width="0dp" android:layout_columnWeight="1" />
+        <Button android:id="@+id/btn0" text="0" android:layout_width="0dp" android:layout_columnWeight="1" />
+        <Button android:id="@+id/btnEqual" text="=" android:layout_width="0dp" android:layout_columnWeight="1" />
+        <Button android:id="@+id/btnAdd" text="+" android:layout_width="0dp" android:layout_columnWeight="1" />
+
+    </GridLayout>
+</LinearLayout>
