@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/book_tickets"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/etSearchEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/event_name"
+                android:minHeight="48dp"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btnSearchTickets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search_available"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnUpcomingEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nearest_events"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnBuyTestTicket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buy_random"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@android:color/holo_green_dark"/>
+
+            <Button
+                android:id="@+id/btnMyTickets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/check_tickets"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@android:color/holo_blue_dark"/>
+
+            <Button
+                android:id="@+id/btnClearLogs"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="@string/clear_logs"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/log"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/tvConsoleLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:background="#F0F0F0"
+                android:text="@string/ready"
+                android:textColor="@android:color/black"
+                android:fontFamily="monospace"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

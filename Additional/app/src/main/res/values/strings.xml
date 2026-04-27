@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Additional</string>
+    <string name="book_tickets">Система бронювання квитків</string>
+    <string name="event_name">Введіть назву івенту (напр. Live)</string>
+    <string name="search_available">Пошук вільних квитків</string>
+    <string name="nearest_events">Найближчі івенти</string>
+    <string name="buy_random">Купити випадковий квиток</string>
+    <string name="log">Лог операцій:</string>
+    <string name="ready">Система готова...</string>
+    <string name="check_tickets">Перевірити ваші білети</string>
+    <string name="clear_logs">Очистити логи</string>
+</resources>
